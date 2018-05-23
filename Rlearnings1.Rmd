@@ -21,12 +21,54 @@ print("R is an interpreted Language")
 ```
 
 ```{r}
-x <- 1:5
+x <- 1:5  #vector 
 x
 ```
 
 ```{r}
-y <- 6:10
+y <- 6:10  #<- represents assignment
 y
 ```
+```{r}
+x +y
 
+```
+
+```{r}
+c(1,2,3,4,5) #vector
+```
+
+```{r}
+z=x+y
+z
+```
+
+```{r}
+h <- "hello"
+h
+```
+
+```{r}
+hw <- c("hello","world")
+hw
+```
+
+```{r}
+paste ("hello","world")
+
+```
+
+```{r}
+h <- "hello"
+yourname <-readline("what is your name")
+print(paste(h,yourname))
+
+```
+
+```{r}
+rm(z)
+```
+
+
+
+```
