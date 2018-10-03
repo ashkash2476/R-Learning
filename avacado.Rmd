@@ -1,0 +1,40 @@
+data- about avacado prices .Numerical column names refer to price 
+link:-https://www.kaggle.com/neuromusic/avocado-prices
+
+
+```{r}
+mydata <- read.csv("avocado.csv")
+print(mydata)
+```
+
+```{r}
+datanew<- mydata[1:10,]
+print(datanew)
+```
+```{r}
+print(datanew["Total.Bags"])
+class(datanew["Total.Bags"])
+
+
+
+```
+
+
+
+```{r}
+library(ggplot2)
+ggplot(datanew, aes(x = Total.Bags)) +
+  geom_histogram()
+  
+```
+
+```{r}
+ggplot(datanew,aes(x=Total.Bags,y=Small.Bags)) +
+  geom_point()
+```
+
+```{r}
+ggplot(datanew,aes(x=Date,y=AveragePrice)) +
+  geom_line()
+```
+
