@@ -1,0 +1,24 @@
+Data-Population for countries from 1960 to 2015.
+Link-https://www.kaggle.com/mrpantherson/metal-by-nation/#world_population_1960_2015.csv
+
+Loading data
+```{r}
+data <- read.csv("world_population_1960_2015.csv")
+print(data)
+```
+
+```{r}
+print(data["Country.Name"])
+```
+
+```{r}
+print(data[5,])
+print(data[c(2,3),c(4,5)])   # 2 and 3rd row with 4 th and 5 th column
+
+```
+```{r}
+library(ggplot2)
+ggplot(data,aes(x=data[c(1,2),c(2,3)],y=data[c(0,2),c(0,3)]))
+
+```
+
